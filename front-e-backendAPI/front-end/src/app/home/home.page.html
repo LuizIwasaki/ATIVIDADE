@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Página de Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="text" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-button color="primary" (click)="passAddPost()">Salvar</ion-button>
+    <ion-button color="primary" (click)="''">Visualizar</ion-button>
+    <ion-button color="danger" (click)="deletePass()">Excluir</ion-button>
+  </div>
+</ion-content>
